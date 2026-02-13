@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>윷놀이 게임</h1>
+        <div class="playground">
+            <img src="./image/p.webp" alt="bg" draggable="false">
+            <div class="piece_boards">
+                <div class="result"></div>
+                <div class="players">
+                    <div class="blue"><span>1</span><span>2</span><span>3</span></div>
+                    <div class="red"><span>1</span><span>2</span><span>3</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="randombox"><img src="./image/m1.webp" alt="모"></div>
+        <div class="control">
+            <div class="info">청팀 차례입니다.</div>
+            <button class="btn">윷 던지기</button>
+            <button class="resetbtn">재시작</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- 모바일 터치로 draggable 가능하게 하기위한 라이브러리 -->
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
