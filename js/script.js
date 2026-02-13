@@ -74,9 +74,9 @@ $(function(){
     });
     function randomImg(){
         let num=Math.floor(Math.random()*5)+1; //1~5 랜덤
-        let imgsrc=`./image/m1-0${num}.webp`;
-        $('randombox').find('img').attr('src',imgsrc);
-        $('randombox').css('display','felx');
+        let imgsrc=`./image/m${num}.webp`;  console.log(imgsrc)
+        $('.randombox').find('img').attr('src',imgsrc);
+        $('.randombox').css('display','flex');
         /* setTimeout(()=>{},2000) -> setTimeout(()=>{$('.randombox').hide()},2000)*/
         $('.randombox').delay(2000).fadeOut(150);
         //------------윷, 모가 나오면 추가 기회를 생성해야함----------------
@@ -86,8 +86,8 @@ $(function(){
             schedualNextturn(extraTurn); //혹시나 다른 턴이 있다면 다른 결과를 보여준다는 걸까?
         },2000);
     }
-    $('btn').on('click',function(){
-        $('randombox').hide();
+    $('.btn').on('click',function(){
+        $('.randombox').hide();
         setTimeout(randomImg,1500);
     });
     $('.resetbtn').on('click',function(){
